@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/MSI/AndroidStudioProjects/Registrodepacientes/app/src/main/res/layout/activity_dashboard.xml" value="0.2421875" />
+        <entry key="..\:/Users/MSI/AndroidStudioProjects/Registrodepacientes/app/src/main/res/layout/activity_examenes.xml" value="0.2421875" />
+        <entry key="..\:/Users/MSI/AndroidStudioProjects/Registrodepacientes/app/src/main/res/layout/activity_login.xml" value="0.2421875" />
         <entry key="..\:/Users/MSI/AndroidStudioProjects/Registrodepacientes/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
+        <entry key="..\:/Users/MSI/AndroidStudioProjects/Registrodepacientes/app/src/main/res/layout/activity_nuevo_ingreso.xml" value="0.2421875" />
       </map>
     </option>
   </component>
