@@ -1,4 +1,4 @@
-package cl.aiep.android.NotFoundTeam
+package cl.aiep.android.notfoundteam
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("cl.aiep.android.NotFoundTeam", appContext.packageName)
+        assertEquals("cl.aiep.android.notfoundteam", appContext.packageName)
     }
 }

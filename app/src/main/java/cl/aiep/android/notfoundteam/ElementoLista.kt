@@ -1,11 +1,11 @@
-package cl.aiep.android.NotFoundTeam
+package cl.aiep.android.notfoundteam
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class NuevoIngreso : AppCompatActivity() {
+class ElementoLista : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nuevo_ingreso)
+        setContentView(R.layout.activity_elemento_lista)
     }
 }

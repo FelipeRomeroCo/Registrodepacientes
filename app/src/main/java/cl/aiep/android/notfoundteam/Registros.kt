@@ -1,11 +1,11 @@
-package cl.aiep.android.NotFoundTeam
+package cl.aiep.android.notfoundteam
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class dashboard : AppCompatActivity() {
+class Registros : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dashboard)
+        setContentView(R.layout.activity_registros)
     }
 }

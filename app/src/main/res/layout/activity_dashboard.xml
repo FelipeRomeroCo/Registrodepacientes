@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".dashboard">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/txtTituloDashboard"
@@ -22,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:onClick="crearNuevoIngreso"
         android:text="Crear nuevo ingreso"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,6 +33,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:onClick="verIngresos"
         android:text="Ver ingresos"
         app:layout_constraintEnd_toEndOf="@+id/btnNuevoIngreso"
         app:layout_constraintStart_toStartOf="@+id/btnNuevoIngreso"

@@ -1,4 +1,4 @@
-package cl.aiep.android.NotFoundTeam
+package cl.aiep.android.notfoundteam
 
 import org.junit.Test
 
