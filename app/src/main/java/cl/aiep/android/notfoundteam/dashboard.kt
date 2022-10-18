@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 
 class dashboard : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,5 +17,8 @@ class dashboard : AppCompatActivity() {
     }
     fun verIngresos(view: View) {
         startActivity(Intent(this, Registros::class.java))
+    }
+    fun verEstadisticas(view: View) {
+        Toast.makeText(this, "Función en desarrollo, intente nuevamente en versiones posteriores de la app", Toast.LENGTH_LONG).show()
     }
 }

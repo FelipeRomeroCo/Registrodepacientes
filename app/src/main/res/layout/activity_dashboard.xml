@@ -38,4 +38,15 @@
         app:layout_constraintEnd_toEndOf="@+id/btnNuevoIngreso"
         app:layout_constraintStart_toStartOf="@+id/btnNuevoIngreso"
         app:layout_constraintTop_toBottomOf="@+id/btnNuevoIngreso" />
+
+    <Button
+        android:id="@+id/btnEstadisticas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="verEstadisticas"
+        android:text="Estadísticas"
+        app:layout_constraintEnd_toEndOf="@+id/btnVerIngresos"
+        app:layout_constraintStart_toStartOf="@+id/btnVerIngresos"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerIngresos" />
 </androidx.constraintlayout.widget.ConstraintLayout>
