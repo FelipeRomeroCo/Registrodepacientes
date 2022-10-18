@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/txtExamen"
+            android:id="@+id/tvNombres"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
