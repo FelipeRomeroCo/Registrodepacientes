@@ -14,28 +14,31 @@
         android:theme="@style/Theme.RegistroDePacientes"
         tools:targetApi="31">
         <activity
-            android:name="cl.aiep.android.notfoundteam.ElementoDetalle"
+            android:name=".Ejemplos"
             android:exported="false" />
         <activity
-            android:name="cl.aiep.android.notfoundteam.ElementoLista"
+            android:name=".ElementoDetalle"
             android:exported="false" />
         <activity
-            android:name="cl.aiep.android.notfoundteam.Registros"
+            android:name=".ElementoLista"
             android:exported="false" />
         <activity
-            android:name="cl.aiep.android.notfoundteam.Examenes"
+            android:name=".Registros"
             android:exported="false" />
         <activity
-            android:name="cl.aiep.android.notfoundteam.NuevoIngreso"
+            android:name=".Examenes"
             android:exported="false" />
         <activity
-            android:name="cl.aiep.android.notfoundteam.dashboard"
+            android:name=".NuevoIngreso"
             android:exported="false" />
         <activity
-            android:name="cl.aiep.android.notfoundteam.login"
+            android:name=".dashboard"
             android:exported="false" />
         <activity
-            android:name="cl.aiep.android.notfoundteam.MainActivity"
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

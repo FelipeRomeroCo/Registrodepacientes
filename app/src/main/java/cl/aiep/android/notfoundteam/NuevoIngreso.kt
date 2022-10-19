@@ -1,6 +1,8 @@
 package cl.aiep.android.notfoundteam
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import cl.aiep.android.notfoundteam.Constantes.NOMBRE_BASE
@@ -22,17 +24,22 @@ class NuevoIngreso : AppCompatActivity() {
         //Vamos a asignar una accion al onclick de guardar
         binding.btnContinuar.setOnClickListener {
             guardarDatos()
+
         }
     }
+
 
     //Metodo para guadar datos en la base de datos Local
     private fun guardarDatos() {
         //Declarar el objeto que voy a llenar de informacion
-        val nombres = binding.etNombres.text.toString()
+        var nombres = binding.etNombres.text.toString()
         val apellidos = binding.etApellidos.text.toString()
         val rut = binding.etRut.text.toString()
         val fechanacimiento = binding.etFechaDeNacimiento.text.toString()
         val sexo = binding.etSexo.text.toString()
+        val examen1 = binding.etExamen1.text.toString()
+        val examen2 = binding.etExamen2.text.toString()
+        val examen3 = binding.etExamen3.text.toString()
 
         val datoIngreso = Ingresos(
             null,
@@ -40,7 +47,10 @@ class NuevoIngreso : AppCompatActivity() {
             apellidos,
             rut,
             fechanacimiento,
-            sexo
+            sexo,
+            examen1,
+            examen2,
+            examen3
         )
 
 
@@ -53,5 +63,22 @@ class NuevoIngreso : AppCompatActivity() {
         } else {
             Toast.makeText(this, "Error al guardar el dato ($status)", Toast.LENGTH_LONG).show()
         }
+        limpiarDatos()
+    }
+
+    private fun limpiarDatos() {
+        binding.etRut.setText("")
+        binding.etNombres.setText("")
+        binding.etApellidos.setText("")
+        binding.etFechaDeNacimiento.setText("")
+        binding.etSexo.setText("")
+        binding.etExamen1.setText("")
+        binding.etExamen2.setText("")
+        binding.etExamen3.setText("")
+    }
+
+
+    fun cancelar(view: View) {
+        startActivity(Intent(this, dashboard::class.java))
     }
 }

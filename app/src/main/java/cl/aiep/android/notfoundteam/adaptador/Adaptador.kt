@@ -1,20 +1,13 @@
 package cl.aiep.android.notfoundteam.adaptador
 
-import android.app.AlertDialog
-import android.content.Context
-import android.content.DialogInterface
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import cl.aiep.android.notfoundteam.R
 import cl.aiep.android.notfoundteam.Registros
 import cl.aiep.android.notfoundteam.clases.Ingresos
-import cl.aiep.android.notfoundteam.databinding.ActivityDashboardBinding
 import cl.aiep.android.notfoundteam.databinding.ActivityRegistrosBinding
 
 class Adaptador(
@@ -63,9 +56,9 @@ class Adaptador(
         //Nombre
         holder.tvNombres.text = listaIngresos.get(position).nombres
         holder.tvApellidos.text = listaIngresos.get(position).apellidos
-    //    holder.tvExamen1.text = listaIngresos.get(position).examen1
-    //    holder.tvExamen2.text = listaIngresos.get(position).examen2
-    //    holder.tvExamen3.text = listaIngresos.get(position).examen3
+        holder.tvExamen1.text = listaIngresos.get(position).examen1
+        holder.tvExamen2.text = listaIngresos.get(position).examen2
+        holder.tvExamen3.text = listaIngresos.get(position).examen3
     }
 
     // Return the size of your dataset (invoked by the layout manager)
