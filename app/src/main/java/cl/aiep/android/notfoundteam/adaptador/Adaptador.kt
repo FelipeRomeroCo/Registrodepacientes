@@ -1,11 +1,16 @@
 package cl.aiep.android.notfoundteam.adaptador
 
+import android.app.AlertDialog
+import android.content.DialogInterface
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import cl.aiep.android.notfoundteam.MainActivity
 import cl.aiep.android.notfoundteam.R
 import cl.aiep.android.notfoundteam.Registros
 import cl.aiep.android.notfoundteam.clases.Ingresos
@@ -23,6 +28,8 @@ class Adaptador(
      * Provide a reference to the type of views that you are using
      * (custom ViewHolder).
      */
+
+
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvNombres: TextView
         val tvApellidos: TextView
