@@ -19,7 +19,7 @@ class login : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLogin.setOnClickListener {
-            if (binding.etUsuario.text.isNullOrEmpty() || binding.etPassword.text.isNullOrEmpty()){
+            if (binding.etUsuario.editText?.text.isNullOrEmpty() || binding.etPassword.editText?.text.isNullOrEmpty()){
                 Toast.makeText(this, "Debe ingresar todos los datos", Toast.LENGTH_LONG).show()
             } else{
                 startActivity(Intent(this, dashboard::class.java))

@@ -22,35 +22,22 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="16dp"
         android:text="Editar"
-        app:layout_constraintBottom_toTopOf="@+id/btnEliminar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetalleExamen3" />
 
     <Button
         android:id="@+id/btnEliminar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Eliminar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnEditar"
-        app:layout_constraintStart_toStartOf="@+id/btnEditar" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvDetalleExamenes"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnEditar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFechaDeNacimiento" />
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="@+id/btnEditar"
+        app:layout_constraintStart_toStartOf="@+id/btnEditar"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditar" />
 
     <TextView
         android:id="@+id/tvRut"
@@ -86,4 +73,50 @@
         app:layout_constraintEnd_toEndOf="@+id/tvRut"
         app:layout_constraintStart_toEndOf="@+id/tvFechaDeNacimiento"
         app:layout_constraintTop_toBottomOf="@+id/tvRut" />
+
+    <TextView
+        android:id="@+id/tvExamenes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Exámenes"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFechaDeNacimiento" />
+
+    <TextView
+        android:id="@+id/tvDetalleExamen1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:text="Examen 1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvExamenes" />
+
+    <TextView
+        android:id="@+id/tvDetalleExamen2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Examen 2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDetalleExamen1"
+        app:layout_constraintStart_toStartOf="@+id/tvDetalleExamen1"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetalleExamen1" />
+
+    <TextView
+        android:id="@+id/tvDetalleExamen3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Examen 3"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDetalleExamen2"
+        app:layout_constraintStart_toStartOf="@+id/tvDetalleExamen2"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetalleExamen2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

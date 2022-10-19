@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import cl.aiep.android.notfoundteam.R
 import cl.aiep.android.notfoundteam.Registros
@@ -59,6 +60,7 @@ class Adaptador(
         holder.tvExamen1.text = listaIngresos.get(position).examen1
         holder.tvExamen2.text = listaIngresos.get(position).examen2
         holder.tvExamen3.text = listaIngresos.get(position).examen3
+
     }
 
     // Return the size of your dataset (invoked by the layout manager)

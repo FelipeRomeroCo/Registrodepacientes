@@ -26,7 +26,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etRut"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -38,9 +38,17 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtNuevoIngreso" />
+            app:layout_constraintTop_toBottomOf="@+id/txtNuevoIngreso" >
 
-        <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etNombres"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -50,9 +58,16 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/etRut"
             app:layout_constraintStart_toStartOf="@+id/etRut"
-            app:layout_constraintTop_toBottomOf="@+id/etRut" />
+            app:layout_constraintTop_toBottomOf="@+id/etRut" >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true" />
 
-        <EditText
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etApellidos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -62,9 +77,18 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/etNombres"
             app:layout_constraintStart_toStartOf="@+id/etNombres"
-            app:layout_constraintTop_toBottomOf="@+id/etNombres" />
+            app:layout_constraintTop_toBottomOf="@+id/etNombres" >
 
-        <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etFechaDeNacimiento"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -74,7 +98,15 @@
             android:inputType="date"
             app:layout_constraintEnd_toEndOf="@+id/etApellidos"
             app:layout_constraintStart_toStartOf="@+id/etApellidos"
-            app:layout_constraintTop_toBottomOf="@+id/etApellidos" />
+            app:layout_constraintTop_toBottomOf="@+id/etApellidos" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/btnContinuar"
@@ -83,7 +115,7 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="60dp"
-            android:text="Continuar"
+            android:text="Guarda"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etExamen3" />
@@ -92,14 +124,14 @@
             android:id="@+id/btnCancelar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:onClick="cancelar"
             android:text="Cancelar"
             app:layout_constraintEnd_toEndOf="@+id/btnContinuar"
             app:layout_constraintStart_toStartOf="@+id/btnContinuar"
             app:layout_constraintTop_toBottomOf="@+id/btnContinuar" />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etExamen1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -109,9 +141,17 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/etSexo"
             app:layout_constraintStart_toStartOf="@+id/etSexo"
-            app:layout_constraintTop_toBottomOf="@+id/etSexo" />
+            app:layout_constraintTop_toBottomOf="@+id/etSexo" >
 
-        <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etExamen2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -121,9 +161,17 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/etExamen1"
             app:layout_constraintStart_toStartOf="@+id/etExamen1"
-            app:layout_constraintTop_toBottomOf="@+id/etExamen1" />
+            app:layout_constraintTop_toBottomOf="@+id/etExamen1" >
 
-        <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etExamen3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -133,9 +181,17 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/etExamen2"
             app:layout_constraintStart_toStartOf="@+id/etExamen2"
-            app:layout_constraintTop_toBottomOf="@+id/etExamen2" />
+            app:layout_constraintTop_toBottomOf="@+id/etExamen2" >
 
-        <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etSexo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -146,8 +202,15 @@
             app:layout_constraintEnd_toEndOf="@+id/etFechaDeNacimiento"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/etFechaDeNacimiento"
-            app:layout_constraintTop_toBottomOf="@+id/etFechaDeNacimiento" />
+            app:layout_constraintTop_toBottomOf="@+id/etFechaDeNacimiento" >
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

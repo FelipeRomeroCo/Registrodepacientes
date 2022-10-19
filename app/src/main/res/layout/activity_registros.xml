@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="16dp"
-        android:text="Registros"
+        android:text="Ingresos"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/rvRegistros"
         app:layout_constraintEnd_toEndOf="parent"
