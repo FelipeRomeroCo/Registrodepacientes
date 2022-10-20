@@ -24,4 +24,7 @@ class dashboard : AppCompatActivity() {
     fun verEstadisticas(view: View) {
         Toast.makeText(this, "Función en desarrollo, intente nuevamente en versiones posteriores de la app", Toast.LENGTH_LONG).show()
     }
+    fun salir(view: View) {
+        startActivity(Intent(this, MainActivity::class.java))
+    }
 }

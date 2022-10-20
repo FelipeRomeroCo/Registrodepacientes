@@ -10,18 +10,18 @@
         android:id="@+id/txtTituloDashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="24dp"
         android:text="Ingreso de Pacientes"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/btnNuevoIngreso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#00E5FF"
         android:onClick="crearNuevoIngreso"
         android:text="Crear nuevo ingreso"
@@ -34,7 +34,7 @@
         android:id="@+id/btnVerIngresos"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#00E5FF"
         android:onClick="verIngresos"
         android:text="Ver ingresos"
@@ -47,7 +47,7 @@
         android:id="@+id/btnEstadisticas"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#00E5FF"
         android:onClick="verEstadisticas"
         android:text="Estadísticas"
@@ -61,7 +61,7 @@
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#00E5FF"
         android:onClick="buscarPaciente"
         android:text="Buscar Paciente"
@@ -69,4 +69,27 @@
         app:layout_constraintEnd_toEndOf="@+id/btnVerIngresos"
         app:layout_constraintStart_toStartOf="@+id/btnVerIngresos"
         app:layout_constraintTop_toBottomOf="@+id/btnVerIngresos" />
+
+    <Button
+        android:id="@+id/btnSalirDashboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#00E5FF"
+        android:onClick="salir"
+        android:text="Salir"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnEstadisticas"
+        app:layout_constraintStart_toStartOf="@+id/btnEstadisticas"
+        app:layout_constraintTop_toBottomOf="@+id/btnEstadisticas" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
