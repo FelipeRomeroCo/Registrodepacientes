@@ -1,5 +1,6 @@
 package cl.aiep.android.notfoundteam
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -49,5 +50,9 @@ class Registros : AppCompatActivity() {
             // set adapter
             adapter = adaptadorDataLugares
         }
+    }
+
+    fun cancelar(view: View) {
+        startActivity(Intent(this, dashboard::class.java))
     }
 }
