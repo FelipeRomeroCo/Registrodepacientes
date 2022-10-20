@@ -22,8 +22,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:backgroundTint="#00E5FF"
         android:onClick="crearNuevoIngreso"
         android:text="Crear nuevo ingreso"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTituloDashboard" />
@@ -33,8 +35,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#00E5FF"
         android:onClick="verIngresos"
         android:text="Ver ingresos"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/btnNuevoIngreso"
         app:layout_constraintStart_toStartOf="@+id/btnNuevoIngreso"
         app:layout_constraintTop_toBottomOf="@+id/btnNuevoIngreso" />
@@ -44,8 +48,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#00E5FF"
         android:onClick="verEstadisticas"
         android:text="Estadísticas"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/btnVerIngresos"
         app:layout_constraintStart_toStartOf="@+id/btnVerIngresos"
         app:layout_constraintTop_toBottomOf="@+id/btnVerIngresos" />

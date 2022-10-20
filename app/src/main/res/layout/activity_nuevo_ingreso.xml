@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#E3F2FD"
     tools:context=".NuevoIngreso">
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
 
         <TextView
@@ -38,11 +38,12 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtNuevoIngreso" >
+            app:layout_constraintTop_toBottomOf="@+id/txtNuevoIngreso">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#E3F2FD"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -58,10 +59,12 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/etRut"
             app:layout_constraintStart_toStartOf="@+id/etRut"
-            app:layout_constraintTop_toBottomOf="@+id/etRut" >
+            app:layout_constraintTop_toBottomOf="@+id/etRut">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#E3F2FD"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -77,11 +80,12 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/etNombres"
             app:layout_constraintStart_toStartOf="@+id/etNombres"
-            app:layout_constraintTop_toBottomOf="@+id/etNombres" >
+            app:layout_constraintTop_toBottomOf="@+id/etNombres">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#E3F2FD"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -98,11 +102,12 @@
             android:inputType="date"
             app:layout_constraintEnd_toEndOf="@+id/etApellidos"
             app:layout_constraintStart_toStartOf="@+id/etApellidos"
-            app:layout_constraintTop_toBottomOf="@+id/etApellidos" >
+            app:layout_constraintTop_toBottomOf="@+id/etApellidos">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#E3F2FD"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -115,7 +120,9 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="60dp"
+            android:backgroundTint="#00E5FF"
             android:text="Guarda"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etExamen3" />
@@ -125,8 +132,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:backgroundTint="#00E5FF"
             android:onClick="cancelar"
             android:text="Volver"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/btnContinuar"
             app:layout_constraintStart_toStartOf="@+id/btnContinuar"
             app:layout_constraintTop_toBottomOf="@+id/btnContinuar" />
@@ -141,11 +150,12 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/etSexo"
             app:layout_constraintStart_toStartOf="@+id/etSexo"
-            app:layout_constraintTop_toBottomOf="@+id/etSexo" >
+            app:layout_constraintTop_toBottomOf="@+id/etSexo">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#E3F2FD"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -161,11 +171,12 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/etExamen1"
             app:layout_constraintStart_toStartOf="@+id/etExamen1"
-            app:layout_constraintTop_toBottomOf="@+id/etExamen1" >
+            app:layout_constraintTop_toBottomOf="@+id/etExamen1">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#E3F2FD"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -181,11 +192,12 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/etExamen2"
             app:layout_constraintStart_toStartOf="@+id/etExamen2"
-            app:layout_constraintTop_toBottomOf="@+id/etExamen2" >
+            app:layout_constraintTop_toBottomOf="@+id/etExamen2">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#E3F2FD"
                 android:maxLines="1"
                 android:singleLine="true" />
 
@@ -202,11 +214,12 @@
             app:layout_constraintEnd_toEndOf="@+id/etFechaDeNacimiento"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/etFechaDeNacimiento"
-            app:layout_constraintTop_toBottomOf="@+id/etFechaDeNacimiento" >
+            app:layout_constraintTop_toBottomOf="@+id/etFechaDeNacimiento">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#E3F2FD"
                 android:maxLines="1"
                 android:singleLine="true" />
 
