@@ -6,22 +6,21 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 
-class dashboard : AppCompatActivity() {
+class BuscarPaciente : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dashboard)
+        setContentView(R.layout.activity_buscar_paciente)
     }
 
-    fun crearNuevoIngreso(view: View) {
-        startActivity(Intent(this, NuevoIngreso::class.java))
-    }
-    fun verIngresos(view: View) {
-        startActivity(Intent(this, Registros::class.java))
-    }
-    fun buscarPaciente(view: View) {
-        startActivity(Intent(this, BuscarPaciente::class.java))
-    }
-    fun verEstadisticas(view: View) {
+    fun editarPaciente(view: View) {
         Toast.makeText(this, "Función en desarrollo, intente nuevamente en versiones posteriores de la app", Toast.LENGTH_LONG).show()
+    }
+
+    fun eliminarPaciente(view: View) {
+        Toast.makeText(this, "Función en desarrollo, intente nuevamente en versiones posteriores de la app", Toast.LENGTH_LONG).show()
+    }
+
+    fun volver(view: View) {
+        startActivity(Intent(this, dashboard::class.java))
     }
 }

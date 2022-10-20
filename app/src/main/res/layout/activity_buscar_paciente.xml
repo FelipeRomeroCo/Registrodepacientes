@@ -3,78 +3,66 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Examenes">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/txtNombreDetalle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:text="Nombre y Apellidos"
-        android:textSize="20sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnEditar"
+        android:id="@+id/btnEditarDetalle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="100dp"
-        android:backgroundTint="#00ACC1"
+        android:backgroundTint="#00E5FF"
+        android:onClick="editarPaciente"
         android:text="Editar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDetalleExamen3" />
 
     <Button
-        android:id="@+id/btnEliminar"
+        android:id="@+id/btnEliminarDetalle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#00ACC1"
+        android:backgroundTint="#00E5FF"
+        android:onClick="eliminarPaciente"
         android:text="Eliminar"
-        app:layout_constraintEnd_toEndOf="@+id/btnEditar"
-        app:layout_constraintStart_toStartOf="@+id/btnEditar"
-        app:layout_constraintTop_toBottomOf="@+id/btnEditar" />
-
-    <TextView
-        android:id="@+id/tvRut"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:text="Rut"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombreDetalle" />
+        app:layout_constraintEnd_toEndOf="@+id/btnEditarDetalle"
+        app:layout_constraintStart_toStartOf="@+id/btnEditarDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditarDetalle" />
 
     <TextView
         android:id="@+id/tvFechaDeNacimiento"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
         android:text="Fecha de nacimiento"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/tvRut"
-        app:layout_constraintTop_toBottomOf="@+id/tvRut" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreDetalle" />
 
     <TextView
         android:id="@+id/tvSexo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
         android:text="Sexo"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/tvRut"
         app:layout_constraintStart_toEndOf="@+id/tvFechaDeNacimiento"
-        app:layout_constraintTop_toBottomOf="@+id/tvRut" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <TextView
         android:id="@+id/tvExamenes"
@@ -121,4 +109,48 @@
         app:layout_constraintEnd_toEndOf="@+id/tvDetalleExamen2"
         app:layout_constraintStart_toStartOf="@+id/tvDetalleExamen2"
         app:layout_constraintTop_toBottomOf="@+id/tvDetalleExamen2" />
+
+    <Button
+        android:id="@+id/btnVolverDetalle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00E5FF"
+        android:onClick="volver"
+        android:text="Volver"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnEliminarDetalle"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/btnEliminarDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/btnEliminarDetalle" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Rut"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tvFechaDeNacimiento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreDetalle" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00E5FF"
+        android:onClick="editarPaciente"
+        android:text="Buscar"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreDetalle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
