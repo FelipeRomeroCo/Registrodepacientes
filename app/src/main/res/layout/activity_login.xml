@@ -25,14 +25,13 @@
         android:id="@+id/etUsuario"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="110dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="Usuario"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/txtTituloLogin"
+        app:layout_constraintStart_toStartOf="@+id/txtTituloLogin"
         app:layout_constraintTop_toBottomOf="@+id/txtTituloLogin">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -40,7 +39,9 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#E3F2FD"
             android:maxLines="1"
+            android:gravity="center_horizontal"
             android:singleLine="true"
+            android:textAlignment="center"
             android:textColorLink="#E3F2FD" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -64,6 +65,7 @@
             android:drawableTint="#00AAFF"
             android:inputType="textPassword"
             android:maxLines="1"
+            android:gravity="center_horizontal"
             android:singleLine="true"
             android:textColor="#000000" />
 
@@ -73,11 +75,10 @@
         android:id="@+id/btnLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#00E5FF"
         android:text="Ingresar"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/etPassword"
         app:layout_constraintStart_toStartOf="@+id/etPassword"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
@@ -85,14 +86,15 @@
         android:id="@+id/btnSalir"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#00E5FF"
         android:onClick="salir"
         android:text="Salir"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
-        app:layout_constraintStart_toStartOf="@+id/btnLogin"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintEnd_toEndOf="@+id/etPassword"
+        app:layout_constraintStart_toEndOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <ImageView
         android:id="@+id/imageView2"
